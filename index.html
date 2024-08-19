@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/570d8b7e98.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="weather-info">
+        <form id="input-search-container">
+          <input
+            id="input-search"
+            type="text"
+            placeholder="search for cities"
+          />
+
+          <div id="filter-search-container"></div>
+        </form>
+        <div id="info-container">
+          <div id="info-div">
+            <h1 id="main-city-name">Madrid</h1>
+
+            <p id="description">chance of rain</p>
+            <p id="main-temp">31°F</p>
+          </div>
+          <div id="info-image-container">
+            <img src="./assets/sun-solid.svg" alt="sun-solid" />
+          </div>
+        </div>
+
+        <div id="todays-forecast">
+          <h1>Today's forecast</h1>
+
+          <div id="details-container">
+            <div class="today-details">
+              <p class="hourly-1">6.00 AM</p>
+              <img src="./assets/cloud-bolt-solid.svg" alt="cloud-bolt" />
+              <p>25°F</p>
+            </div>
+            <div class="today-details">
+              <p class="hourly-2">9.00 AM</p>
+              <img src="./assets/cloud-moon-solid.svg" alt="cloud-moon" />
+              <p>29°F</p>
+            </div>
+            <div class="today-details">
+              <p class="hourly-3">12.00 AM</p>
+              <img src="./assets/cloud-rain-solid.svg" alt="cloud-rain" />
+              <p>22°F</p>
+            </div>
+            <div class="today-details">
+              <p class="hourly-4">3.00 PM</p>
+              <img src="./assets/cloud-solid.svg" alt="cloud-solid" />
+              <p>32°F</p>
+            </div>
+            <div class="today-details">
+              <p class="hourly-5">6.00 PM</p>
+              <img src="./assets/cloud-sun-rain-solid.svg" alt="sun-rain" />
+              <p>37°F</p>
+            </div>
+            <div class="today-details">
+              <p class="hourly-6">9.00 PM</p>
+              <img src="./assets/snowflake-solid.svg" alt="snowflake" />
+              <p>40°F</p>
+            </div>
+          </div>
+        </div>
+        <div id="air-conditions">
+          <div id="air-title">
+            <h2>Air conditions</h2>
+          </div>
+
+          <div id="both-air-conditions">
+            <div id="left-air-conditions">
+              <div id="left-one">
+                <p>
+                  <span class="air-logo"
+                    ><img
+                      src="./assets/temperature-three-quarters-solid.svg" /></span
+                  >Real Feel
+                </p>
+                <p id="real-feel" class="measures">40°F</p>
+              </div>
+              <div id="left-two">
+                <p>
+                  <span class="air-logo"
+                    ><img src="./assets/droplet-solid.svg" /></span
+                  >Chance of rain
+                </p>
+                <p id="rain-chance" class="measures">0%</p>
+              </div>
+            </div>
+
+            <div id="right-air-conditions">
+              <div id="right-one">
+                <p>
+                  <span class="air-logo"
+                    ><img src="./assets/wind-solid.svg" /></span
+                  >Wind
+                </p>
+                <p id="wind-speed" class="measures">0.2m/h</p>
+              </div>
+              <div id="right-two">
+                <p>
+                  <span class="air-logo"
+                    ><img
+                      src="./assets/temperature-three-quarters-solid.svg" /></span
+                  >Wind
+                </p>
+                <p id="humidity-index" class="measures">50%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="five-dayforcast">
+        <h2>5-DAY FORECAST</h2>
+
+        <div id="five-day-info-container">
+          <div class="five-detail">
+            <p>Today</p>
+            <img src="./assets/cloud-bolt-solid.svg" />
+            <p><span class="weather-photo"></span>Thunder Storms</p>
+            <p class="five-day-temp">43°F</p>
+          </div>
+
+          <div class="five-detail">
+            <p>Mon</p>
+
+            <img src="./assets/cloud-moon-solid.svg" />
+
+            <p><span class="weather-photo"></span>Cloudy</p>
+            <p class="five-day-temp">35°F</p>
+          </div>
+
+          <div class="five-detail">
+            <p>Tue</p>
+            <img src="./assets/snowflake-solid.svg" />
+            <p><span class="weather-photo"></span>Snow</p>
+            <p class="five-day-temp">32°F</p>
+          </div>
+
+          <div class="five-detail">
+            <p>Wed</p>
+            <div>
+              <img src="./assets/sun-solid.svg" />
+            </div>
+            <p><span class="weather-photo"></span>Sunny</p>
+            <p class="five-day-temp">31°F</p>
+          </div>
+
+          <div class="five-detail">
+            <p>Thur</p>
+            <img src="./assets/cloud-bolt-solid.svg" />
+            <p><span class="weather-photo"></span>Thunder Storms</p>
+            <p class="five-day-temp">33°F</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

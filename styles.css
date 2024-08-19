@@ -1,0 +1,298 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  display: grid;
+  background-color: #b1cbb2;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 8em;
+  height: auto;
+  color: #5b5b5b;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+}
+#info-image-container img {
+  width: 8vw;
+}
+
+#info-container {
+  font-size: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#air-conditions {
+  background-color: blueviolet;
+  width: auto;
+  height: auto;
+}
+
+#input-search {
+  width: 100%;
+  font-size: 1.5vw;
+  border: none;
+  margin-bottom: 1em;
+  padding: 10px;
+  background-color: #fef9e7;
+}
+
+#todays-forecast {
+  background-color: #dab37d;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 10px;
+}
+
+.today-details {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.new-hourly-detail {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.new-hourly-detail p {
+  font-size: 2em;
+  width: 20%;
+}
+.today-details p {
+  font-size: 2em;
+  width: 20%;
+}
+
+#details-container {
+  display: flex;
+  font-size: 0.8vw;
+}
+
+#todays-forecast img {
+  width: 4em;
+}
+
+.five-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  align-items: center;
+  margin: 8em;
+}
+
+.five-detail img {
+  width: 100em;
+}
+
+#five-dayforcast p {
+  font-size: 10em;
+  max-width: 20%;
+}
+#five-dayforcast img {
+  width: 20em;
+}
+
+#five-dayforcast {
+  background-color: #7fa4ad;
+  max-width: 200em;
+  max-height: 200em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.15vw;
+  padding: 5em;
+  border-radius: 10px;
+}
+
+.new-five-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  align-items: center;
+  margin: 8em;
+}
+
+#five-dayforcast h2 {
+  font-size: 2vw;
+}
+
+#todays-forecast h1 {
+  font-size: 2.5vw;
+}
+
+#air-conditions {
+  background-color: #fef9e7;
+  width: auto;
+  height: auto;
+  margin-top: 2em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #5b5b5b;
+  padding: 0.5em;
+  font-size: 1vw;
+  gap: 1em;
+  text-align: left;
+}
+
+#air-title h2 {
+  font-size: 2.5vw;
+}
+#right-air-conditions,
+#left-air-conditions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2em;
+}
+
+#right-one,
+#right-two {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.air-logo {
+  margin-right: 4em;
+}
+
+.air-logo img {
+  width: 1.5em;
+  position: relative;
+  top: 4px;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 880px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    background-color: #b1cbb2;
+    height: auto;
+    color: #5b5b5b;
+    width: auto;
+    justify-content: center;
+    padding: 6em;
+  }
+
+  #input-search {
+    width: 100%;
+    font-size: 3.5vw;
+    border: none;
+    margin-bottom: 1em;
+    padding: 10px;
+    background-color: #fef9e7;
+  }
+
+  #air-title h2 {
+    font-size: 4.5vw;
+  }
+
+  #todays-forecast img {
+    width: 10em;
+  }
+
+  #info-image-container img {
+    width: 14vw;
+  }
+
+  #info-container {
+    font-size: 4vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #todays-forecast {
+    background-color: #dab37d;
+    min-width: 20em;
+    height: auto;
+    text-align: center;
+    margin-top: 1em;
+    border-radius: 10px;
+  }
+
+  #five-dayforcast h2 {
+    font-size: 6vw;
+  }
+
+  #todays-forecast h1 {
+    font-size: 4.5vw;
+    margin-bottom: 1em;
+  }
+
+  #input-search {
+    width: 100%;
+
+    border: none;
+    margin-bottom: 1em;
+    padding: 10px;
+    background-color: #fef9e7;
+  }
+
+  .new-hourly-detail p {
+    font-size: 5em;
+  }
+  .today-details p {
+    font-size: 4em;
+  }
+
+  #details-container {
+    display: flex;
+  }
+
+  #air-conditions {
+    background-color: #fef9e7;
+    width: auto;
+    height: auto;
+    margin-top: 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #5b5b5b;
+    padding: 0.5em;
+    font-size: 2.5vw;
+    gap: 1em;
+    text-align: left;
+  }
+
+  #five-dayforcast {
+    background-color: #7fa4ad;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.4vw;
+    padding: 4em;
+    border-radius: 10px;
+    gap: 10em;
+  }
+
+  .new-five-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+    margin: 8em;
+  }
+
+  #five-dayforcast h2 {
+    font-size: 4vw;
+  }
+}
